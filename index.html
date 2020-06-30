@@ -23,17 +23,11 @@
 
                 <div class="searchBarContainer">
                     <h4>Search for a city:</h4>
-                    <input class="search">
-                    <button class="searchBtn"><i class="fas fa-search"></i></button>
+                    <input class="cityInput">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
                 </div>
-                <div class="pastSearches">
-                    <ul class="list-group">
-                        <li class="list-group-item disabled" aria-disabled="true">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Morbi leo risus</li>
-                        <li class="list-group-item">Porta ac consectetur ac</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
+                <div class="pastSearchContainer">
+
                 </div>
 
             </div>
@@ -42,7 +36,10 @@
 
                 <div class="row">
                     <div class="currentDayContainer rounded-sm">
-                        <h3>City name</h3>
+                        <h3 id="cityname"></h3>
+                        <h3 id="todaysDate"></h3>
+                        <div id="icon"><img id="wicon" src=""></div>
+
                         <p id="temperature">
 
                         </p>
@@ -52,6 +49,7 @@
                         <p id="windSpeed">
 
                         </p>
+
                         <p id="uvIndex">
 
                         </p>
@@ -63,41 +61,56 @@
                         <h4>5 day forecast</h4>
 
                         <div class="forecastCardContainer">
-                            <div class="card text-white bg-primary mb-3" id="day1" style="max-width: 18rem;">
+                            <div class="card text-white bg-primary mb-3 forecastCard" id="day1"
+                                style="max-width: 18rem;">
                                 <div class="card-body">
-                                    <h5 class="card-title"></h5>
-                                    <p class="card-text"></p>
+                                    <p class="card-title forecastDate"></p>
+                                    <img class="forecastIcon" src="">
+                                    <p class="card-text forecastTemperature"></p>
+                                    <p class="card-text forecastHumidity"></p>
                                 </div>
                             </div>
 
-                            <div class="card text-white bg-primary mb-3 id=" day2" style="max-width: 18rem;">
+                            <div class="card text-white bg-primary mb-3 forecastCard" id="day2"
+                                style="max-width: 18rem;">
                                 <div class="card-body">
-                                    <h5 class="card-title"></h5>
-                                    <p class="card-text"></p>
+                                    <p class="card-title forecastDate"></p>
+                                    <img class="forecastIcon" src="">
+                                    <p class="card-text forecastTemperature"></p>
+                                    <p class="card-text forecastHumidity"></p>
                                 </div>
                             </div>
 
-
-                            <div class="card text-white bg-primary mb-3" id="day3" style="max-width: 18rem;">
+                            <div class="card text-white bg-primary mb-3 forecastCard" id="day3"
+                                style="max-width: 18rem;">
                                 <div class="card-body">
-                                    <h5 class="card-title"></h5>
-                                    <p class="card-text"></p>
+                                    <p class="card-title forecastDate"></p>
+                                    <img class="forecastIcon" src="">
+                                    <p class="card-text forecastTemperature"></p>
+                                    <p class="card-text forecastHumidity"></p>
                                 </div>
                             </div>
 
-                            <div class="card text-white bg-primary mb-3" id="day4" style="max-width: 18rem;">
+                            <div class="card text-white bg-primary mb-3 forecastCard" id="day4"
+                                style="max-width: 18rem;">
                                 <div class="card-body">
-                                    <h5 class="card-title"></h5>
-                                    <p class="card-text"></p>
+                                    <p class="card-title forecastDate"></p>
+                                    <img class="forecastIcon" src="">
+                                    <p class="card-text forecastTemperature"></p>
+                                    <p class="card-text forecastHumidity"></p>
                                 </div>
                             </div>
 
-                            <div class="card text-white bg-primary mb-3" id="day5" style="max-width: 18rem;">
+                            <div class="card text-white bg-primary mb-3 forecastCard" id="day5"
+                                style="max-width: 18rem;">
                                 <div class="card-body">
-                                    <h5 class="card-title"></h5>
-                                    <p class="card-text"></p>
+                                    <p class="card-title forecastDate"></p>
+                                    <img class="forecastIcon" src="">
+                                    <p class="card-text forecastTemperature"></p>
+                                    <p class="card-text forecastHumidity"></p>
                                 </div>
                             </div>
+
 
                         </div>
                     </div>
